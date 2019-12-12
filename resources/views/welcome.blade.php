@@ -272,11 +272,11 @@
                                     @csrf
                                     <div class="form-set">
                                         <label for="name">Your full name</label>
-                                        <input type="text" name="name" required placeholder="How should we call you?">
+                                        <input type="text" name="name" id="name_field" required placeholder="How should we call you?">
                                     </div>
                                     <div class="form-set">
                                         <label for="email">Your fancy mail</label>
-                                        <input type="text" name="email" required placeholder="Your mail adress">
+                                        <input type="text" name="email" id="email_field" required placeholder="Your mail adress">
                                     </div>
                                     <div class="form-set">
                                         <label for="body">Your message</label>
@@ -409,7 +409,7 @@
         e.preventDefault();
         var name = $('#name_field').val();
         var email = $('#email_field').val();
-        var body = $('#body_field').val();
+        var body = $('#myTextArea').val();
         $('#spectailor-form-submit').text('SENDING...').addClass('form-wait');
         $.ajax({
             headers: {
