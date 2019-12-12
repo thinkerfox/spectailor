@@ -26,6 +26,10 @@
     font-family: arboriaBook;
     src: url('../fonts/Arboria-Book.otf');
 }
+@font-face {
+    font-family: arboriaMedium;
+    src: url('../fonts/Arboria-Medium.otf');
+}
 body{
     margin: 0;
     padding: 0;
@@ -103,6 +107,7 @@ section.section-intro{
     outline: 0;
     box-shadow: none;
     height: 48px;
+    line-height: 44px;
     font-family: arboriaBold;
     font-size: 12px;
     width: 156px;
@@ -112,20 +117,45 @@ section.section-intro{
         color: white;
         background-color: black;
     }
+    &:active{
+        border-color: black;
+        outline: 0;
+        box-shadow: none;
+    }
+    &:focus{
+        border-color: black;
+        outline: 0;
+        box-shadow: none;
+    }
     &.dark-btn{
         color: white;
         background: black;
         &:hover{
             color: black;
-            background: white;
+            background-color: #fee600;
+            border-color: #fee600;
         }
     }
-    &.hand-logo{
+    &.form-success{
+        background: #39b549;
+        color: white;
+        border-color: #39b549;
+    }
+    &.form-wait{
+        background: #fee600;
+        color: black;
+        border-color: #fee600;
+    }
+    /*&.hand-logo{
+        &:hover{
+            background-image: url('../img/hand-blackk.svg');
+        }
         background-image: url('../img/hand.svg');
         background-repeat: no-repeat;
         background-position: left 20px center;
+        background-size: 20px;
         padding-left: 20px;
-    }
+    }*/
 }
 
 .opening{
@@ -148,7 +178,7 @@ section.section-intro{
         line-height: 40px;
         font-family: arboriaBold;
         display: inline-block;
-        background: linear-gradient(0deg, rgba(#FEE600, 0.26) 50%, transparent 50%);
+        background: linear-gradient(to bottom, white 50%, rgba(#FFFABC, 1) 50%);
 
     }
     p{
@@ -163,7 +193,9 @@ section.section-intro{
 .spectailor-link{
     color: black;
     display: inline-block;
-    background: linear-gradient(0deg, rgba(#FEE600, 0.26) 50%, transparent 50%);
+    background: linear-gradient(to bottom, white 50%, rgba(#FFFABC, 1) 50%);
+    line-height: 16px;
+    font-family: arboriaMedium;
     @include transition(all, 0.3s);
     &:hover{
         text-decoration: none;
@@ -171,6 +203,9 @@ section.section-intro{
     }
     &.small-link{
         font-size: 14px;
+        line-height: 15px;
+        font-family: arboriaMedium;
+
     }
 }
 .scroll-down{
@@ -241,10 +276,12 @@ section.section-intro{
 }
 
 .contact-point{
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     h4{
         font-size: 16px;
-        font-family: arboriaBold;
+        margin-top: 0;
+        line-height: 25px;
+        font-family: arboriaMedium;
         margin-bottom: 24px;
     }
     address{
@@ -258,11 +295,17 @@ section.section-intro{
     margin-bottom: 50px;
     label{
         font-size: 16px;
-        font-family: arboriaBold;
+        font-family: arboriaMedium;
         display: block;
         margin-bottom: 0;
     }
-    input{
+    #myTextArea {
+        min-height: 63px;
+        overflow-y: hidden;
+        @include transition(all, 0.3s);
+        resize: none;
+    }
+    input, textarea{
         background: none;
         font-size: 24px;
         border: none;
@@ -288,10 +331,7 @@ section.section-intro{
     height: 100%;
 }
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin-top: 100px;
     &.static-footer-end{
         position: static;
         margin-top: 80px;

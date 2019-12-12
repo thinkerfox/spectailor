@@ -10673,6 +10673,10 @@ h3 {
   font-family: arboriaBook;
   src: url("../fonts/Arboria-Book.otf");
 }
+@font-face {
+  font-family: arboriaMedium;
+  src: url("../fonts/Arboria-Medium.otf");
+}
 body {
   margin: 0;
   padding: 0;
@@ -10750,11 +10754,22 @@ section.section-intro .main-container {
   outline: 0;
   box-shadow: none;
   height: 48px;
+  line-height: 44px;
   font-family: arboriaBold;
   font-size: 12px;
   width: 156px;
   text-align: center;
   letter-spacing: 3px;
+  /*&.hand-logo{
+      &:hover{
+          background-image: url('../img/hand-blackk.svg');
+      }
+      background-image: url('../img/hand.svg');
+      background-repeat: no-repeat;
+      background-position: left 20px center;
+      background-size: 20px;
+      padding-left: 20px;
+  }*/
 }
 @media (prefers-reduced-motion: reduce) {
   .spectailor-btn {
@@ -10766,19 +10781,34 @@ section.section-intro .main-container {
   color: white;
   background-color: black;
 }
+.spectailor-btn:active {
+  border-color: black;
+  outline: 0;
+  box-shadow: none;
+}
+.spectailor-btn:focus {
+  border-color: black;
+  outline: 0;
+  box-shadow: none;
+}
 .spectailor-btn.dark-btn {
   color: white;
   background: black;
 }
 .spectailor-btn.dark-btn:hover {
   color: black;
-  background: white;
+  background-color: #fee600;
+  border-color: #fee600;
 }
-.spectailor-btn.hand-logo {
-  background-image: url("../img/hand.svg");
-  background-repeat: no-repeat;
-  background-position: left 20px center;
-  padding-left: 20px;
+.spectailor-btn.form-success {
+  background: #39b549;
+  color: white;
+  border-color: #39b549;
+}
+.spectailor-btn.form-wait {
+  background: #fee600;
+  color: black;
+  border-color: #fee600;
 }
 
 .opening {
@@ -10806,8 +10836,8 @@ section.section-intro .main-container {
   line-height: 40px;
   font-family: arboriaBold;
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(254, 230, 0, 0.26)), color-stop(50%, transparent));
-  background: linear-gradient(0deg, rgba(254, 230, 0, 0.26) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #fffabc));
+  background: linear-gradient(to bottom, white 50%, #fffabc 50%);
 }
 .opening p {
   font-size: 18px;
@@ -10823,8 +10853,10 @@ section.section-intro .main-container {
 .spectailor-link {
   color: black;
   display: inline-block;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, rgba(254, 230, 0, 0.26)), color-stop(50%, transparent));
-  background: linear-gradient(0deg, rgba(254, 230, 0, 0.26) 50%, transparent 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #fffabc));
+  background: linear-gradient(to bottom, white 50%, #fffabc 50%);
+  line-height: 16px;
+  font-family: arboriaMedium;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
 }
@@ -10840,6 +10872,8 @@ section.section-intro .main-container {
 }
 .spectailor-link.small-link {
   font-size: 14px;
+  line-height: 15px;
+  font-family: arboriaMedium;
 }
 
 .scroll-down {
@@ -10914,11 +10948,13 @@ section.section-intro .main-container {
 }
 
 .contact-point {
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 .contact-point h4 {
   font-size: 16px;
-  font-family: arboriaBold;
+  margin-top: 0;
+  line-height: 25px;
+  font-family: arboriaMedium;
   margin-bottom: 24px;
 }
 .contact-point address {
@@ -10932,11 +10968,24 @@ section.section-intro .main-container {
 }
 .form-set label {
   font-size: 16px;
-  font-family: arboriaBold;
+  font-family: arboriaMedium;
   display: block;
   margin-bottom: 0;
 }
-.form-set input {
+.form-set #myTextArea {
+  min-height: 63px;
+  overflow-y: hidden;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+  resize: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .form-set #myTextArea {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+.form-set input, .form-set textarea {
   background: none;
   font-size: 24px;
   border: none;
@@ -10970,10 +11019,7 @@ section.section-intro .main-container {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 100px;
   background-color: #fff;
   padding-bottom: 40px;
 }

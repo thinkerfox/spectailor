@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- YOUR META INFO -->
     <meta name="description" content="Spectailor">
     <meta name="author" content="http://spectailor.co">
@@ -22,7 +23,7 @@
             <header>
                 <div class="row align-items-center">
                     <div class="col-6"><img src="{{ asset('img/logo.svg') }}" alt="Spectailor" title="Spectailor Official Website"></div>
-                    <div class="col-6"><button class="spectailor-btn">GET IN TOUCH</button></div>
+                    <div class="col-6"><button class="spectailor-btn" id="get-in-touch-btn">GET IN TOUCH</button></div>
                 </div>
             </header>
         </main>
@@ -36,7 +37,7 @@
                         <span class="hero-light">Bespoke</span>
                         <h1>User Experience</h1>
                         <p>We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.</p>
-                        <button class="spectailor-btn dark-btn">EXPLORE NOW</button>
+                        <button class="spectailor-btn dark-btn" id="explore-btn">EXPLORE NOW</button>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-12 col-md-6 hidden-xs">
@@ -156,7 +157,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-md-4 col-12">
-                        <img src="{{ asset('img/audit.svg') }}" alt="Audit" class="img-fluid section-img">
+                        <img src="{{ asset('img/strategy.svg') }}" alt="Audit" class="img-fluid section-img">
                     </div>
                     <div class="col-1"></div>
                     <div class="col-md-7 col-12">
@@ -198,7 +199,7 @@
             <div class="content">
                 <div class="row">
                     <div class="col-md-4 col-12">
-                        <img src="{{ asset('img/audit.svg') }}" alt="Audit" class="img-fluid section-img">
+                        <img src="{{ asset('img/tailoring.svg') }}" alt="Audit" class="img-fluid section-img">
                     </div>
                     <div class="col-1"></div>
                     <div class="col-md-7 col-12">
@@ -267,21 +268,22 @@
                         <p class="contact-sub">Our form is not cool enough? <a class="spectailor-link" href="mailto:hello@spectailor.co">Send us an e-mail</a></p>
                         <div class="row">
                             <div class="col-12">
-                                <form action="">
+                                <form action="{{ route('mail.contact') }}" method="POST" id="spectailor-form">
+                                    @csrf
                                     <div class="form-set">
                                         <label for="name">Your full name</label>
-                                        <input type="text" name="name" placeholder="How should we call you?">
+                                        <input type="text" name="name" required placeholder="How should we call you?">
                                     </div>
                                     <div class="form-set">
                                         <label for="email">Your fancy mail</label>
-                                        <input type="text" name="email" placeholder="Your mail adress">
+                                        <input type="text" name="email" required placeholder="Your mail adress">
                                     </div>
                                     <div class="form-set">
                                         <label for="body">Your message</label>
-                                        <input type="text" name="body" placeholder="What’s on your mind?">
+                                        <textarea name="body" id="myTextArea" required rows="1" placeholder="What’s on your mind?"></textarea>
                                     </div>
                                     <div class="form-set">
-                                        <button class="spectailor-btn dark-btn hand-logo" type="submit">SAY HI!</button>
+                                        <button class="spectailor-btn dark-btn hand-logo" id="spectailor-form-submit" type="submit"><i class="icon-hand"></i> SAY HI!</button>
                                     </div>
                                 </form>
                             </div>
@@ -336,6 +338,90 @@
         }
     });
 
+    $(function() {
+        $('#myTextArea').on('keyup paste', function() {
+            var $el = $(this),
+                offset = $el.innerHeight() - $el.height();
 
+            if ($el.innerHeight() < this.scrollHeight) {
+                // Grow the field if scroll height is smaller
+                $el.height(this.scrollHeight - offset);
+            } else {
+                // Shrink the field and then re-set it to the scroll height in case it needs to shrink
+                $el.height(1);
+                $el.height(this.scrollHeight - offset);
+            }
+        });
+    });
+
+    $('#explore-btn').click(function(){
+        $('html, body').stop().animate({ scrollTop: $('#section-audit').offset().top }, 1000);
+    });
+    $('#get-in-touch-btn').click(function(){
+        $('html, body').stop().animate({ scrollTop: $('#section-contact').offset().top }, 1000);
+    });
+    $('input:required').change(function(){
+        let elem = $(this);
+        if(elem.val() === ""){
+            elem.siblings('label').css('color', '#f0403b');
+            elem.css('border-color', '#f0403b');
+        }else{
+            elem.siblings('label').css('color', '#000');
+            elem.css('border-color', '#000');
+        }
+    });
+    $('textarea:required').change(function(){
+        let elem = $(this);
+        if(elem.val() === ""){
+            elem.siblings('label').css('color', '#f0403b');
+            elem.css('border-color', '#f0403b');
+        }else{
+            elem.siblings('label').css('color', '#000');
+            elem.css('border-color', '#000');
+        }
+    });
+
+
+    $('#spectailor-form-submit').on('click',function(){
+        $('input:required').each(function(){
+            let elem = $(this);
+            if(elem.val() === ""){
+                elem.css('border-color', '#f0403b');
+                elem.siblings('label').css('color', '#f0403b');
+            }else{
+                elem.css('border-color', '#000');
+                elem.siblings('label').css('color', '#000');
+            }
+        });
+        $('textarea:required').each(function(){
+            let elem = $(this);
+            if(elem.val() === ""){
+                elem.css('border-color', '#f0403b');
+                elem.siblings('label').css('color', '#f0403b');
+            }else{
+                elem.css('border-color', '#000');
+                elem.siblings('label').css('color', '#000');
+            }
+        });
+    });
+    var globalBaseUrl = "{{ url('') }}";
+    $('#spectailor-form').submit(function(e){
+        e.preventDefault();
+        var name = $('#name_field').val();
+        var email = $('#email_field').val();
+        var body = $('#body_field').val();
+        $('#spectailor-form-submit').text('SENDING...').addClass('form-wait');
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            type: "POST",
+            url: globalBaseUrl+'/contact',
+            data: { name:name, email:email, body:body },
+            success: function( msg ) {
+                $('#spectailor-form-submit').text('SUCCESS').removeClass('form-wait').addClass('form-success')
+            }
+        });
+    });
 </script>
 </html>
