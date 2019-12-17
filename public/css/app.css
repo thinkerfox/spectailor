@@ -10890,12 +10890,20 @@ section.section-footer {
   padding-top: 10px;
 }
 
+.pill-container {
+  overflow-x: scroll;
+  width: 100vw;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .nav-pills {
   display: inline-box;
   display: -webkit-inline-box;
-  overflow-x: scroll;
-  width: 100vw;
   background: #FCF9F9;
+  width: 120vw;
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
@@ -10904,10 +10912,6 @@ section.section-footer {
   top: 0;
   /* required */
   z-index: 9999;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .nav-pills .nav-link {

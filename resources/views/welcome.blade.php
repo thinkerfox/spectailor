@@ -68,20 +68,22 @@
         </div>
     </section>
     <div class="tabbable sticky">
-    <ul class="nav nav-pills " id="tab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link active" id="audit-tab" data-toggle="pill" href="#audit" role="tab" aria-controls="home" aria-selected="true">Audit</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="refine-tab" data-toggle="pill" href="#refine" role="tab" aria-controls="profile" aria-selected="false">Refine</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="strategy-tab" data-toggle="pill" href="#strategy" role="tab" aria-controls="contact" aria-selected="false">Strategy</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" id="tailoring-tab" data-toggle="pill" href="#tailoring" role="tab" aria-controls="contact" aria-selected="false">Tailoring</a>
-        </li>
-    </ul>
+    <div class="pill-container">
+        <ul class="nav nav-pills " id="tab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="audit-tab" data-toggle="pill" href="#audit" role="tab" aria-controls="home" aria-selected="true">Audit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="refine-tab" data-toggle="pill" href="#refine" role="tab" aria-controls="profile" aria-selected="false">Refine</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="strategy-tab" data-toggle="pill" href="#strategy" role="tab" aria-controls="contact" aria-selected="false">Strategy</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tailoring-tab" data-toggle="pill" href="#tailoring" role="tab" aria-controls="contact" aria-selected="false">Tailoring</a>
+            </li>
+        </ul>
+    </div>
     <div class="tab-content" id="tabContent">
         <div class="tab-pane fade show active" id="audit" role="tabpanel" aria-labelledby="audit-tab">
             <section class="section section-content" id="section-audit">
