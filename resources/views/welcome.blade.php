@@ -357,7 +357,7 @@
     </section>
 </div>
 <div class="hidden-xs" id="fullpage">
-    <section class="section section-intro" id="section-intro">
+    <section class="section section-intro" data-anchor="audit" id="section-intro">
         <div class="main-container">
             <div class="opening">
                 <div class="row align-items-center">
@@ -368,7 +368,7 @@
                         <span class="hero-light">Bespoke</span>
                         <h1>User Experience</h1>
                         <p>We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.</p>
-                        <button class="spectailor-btn dark-btn" id="explore-btn">EXPLORE NOW</button>
+                        <a class="spectailor-btn dark-btn" href="#audit" id="explore-btn">EXPLORE NOW</a>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-12 col-md-6 hidden-xs">
