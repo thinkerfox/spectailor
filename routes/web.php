@@ -12,7 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $agent = new \Jenssegers\Agent\Agent();
+    $agentIsMobile = $agent->isMobile();
+    return view('welcome', compact('agentIsMobile'));
 });
 
 Route::name('mail.contact')->post('/contact', 'EmailController@contact');

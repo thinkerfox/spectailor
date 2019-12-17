@@ -35,6 +35,7 @@
         </div>
     </main>
 </header>
+@if($agentIsMobile)
 <div class="hidden-lg hidden-md hidden-sm" id="page-mobile">
     <section class="section section-intro" id="section-intro">
         <div class="main-container">
@@ -71,21 +72,21 @@
     <div class="pill-container">
         <ul class="nav nav-pills " id="tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="audit-tab" data-toggle="pill" href="#audit" role="tab" aria-controls="home" aria-selected="true">Audit</a>
+                <a class="nav-link active" id="audit-tab" data-toggle="pill" href="#audit-pane" role="tab" aria-controls="home" aria-selected="true">Audit</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="refine-tab" data-toggle="pill" href="#refine" role="tab" aria-controls="profile" aria-selected="false">Refine</a>
+                <a class="nav-link" id="refine-tab" data-toggle="pill" href="#refine-pane" role="tab" aria-controls="profile" aria-selected="false">Refine</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="strategy-tab" data-toggle="pill" href="#strategy" role="tab" aria-controls="contact" aria-selected="false">Strategy</a>
+                <a class="nav-link" id="strategy-tab" data-toggle="pill" href="#strategy-pane" role="tab" aria-controls="contact" aria-selected="false">Strategy</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="tailoring-tab" data-toggle="pill" href="#tailoring" role="tab" aria-controls="contact" aria-selected="false">Tailoring</a>
+                <a class="nav-link" id="tailoring-tab" data-toggle="pill" href="#tailoring-pane" role="tab" aria-controls="contact" aria-selected="false">Tailoring</a>
             </li>
         </ul>
     </div>
     <div class="tab-content" id="tabContent">
-        <div class="tab-pane fade show active" id="audit" role="tabpanel" aria-labelledby="audit-tab">
+        <div class="tab-pane fade show active" id="audit-pane" role="tabpanel" aria-labelledby="audit-tab">
             <section class="section section-content" id="section-audit">
                 <div class="main-container">
                     <div class="content">
@@ -139,7 +140,7 @@
                 </div>
             </section>
         </div>
-        <div class="tab-pane fade" id="refine" role="tabpanel" aria-labelledby="refine-tab">
+        <div class="tab-pane fade" id="refine-pane" role="tabpanel" aria-labelledby="refine-tab">
             <section class="section section-content" id="section-refine">
                 <div class="main-container">
                     <div class="content">
@@ -184,7 +185,7 @@
                 </div>
             </section>
         </div>
-        <div class="tab-pane fade" id="strategy" role="tabpanel" aria-labelledby="strategy-tab">
+        <div class="tab-pane fade" id="strategy-pane" role="tabpanel" aria-labelledby="strategy-tab">
             <section class="section section-content" id="section-strategy">
                 <div class="main-container">
                     <div class="content">
@@ -228,7 +229,7 @@
                 </div>
             </section>
         </div>
-        <div class="tab-pane fade" id="tailoring" role="tabpanel" aria-labelledby="tailoring-tab">
+        <div class="tab-pane fade" id="tailoring-pane" role="tabpanel" aria-labelledby="tailoring-tab">
             <section class="section section-content" id="section-tailoring">
                 <div class="main-container">
                     <div class="content">
@@ -356,6 +357,7 @@
         </footer>
     </section>
 </div>
+@else
 <div class="hidden-xs" id="fullpage">
     <section class="section section-intro" data-anchor="audit" id="section-intro">
         <div class="main-container">
@@ -648,6 +650,7 @@
         </footer>
     </section>
 </div>
+@endif
 </body>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -701,12 +704,6 @@
         });
     });
 
-    $('#explore-btn').click(function(){
-        $('html, body').stop().animate({ scrollTop: $('#section-audit').offset().top }, 1000);
-    });
-    $('#get-in-touch-btn').click(function(){
-        $('html, body').stop().animate({ scrollTop: $('#section-contact').offset().top }, 1000);
-    });
     $('input:required').change(function(){
         let elem = $(this);
         if(elem.val() === ""){
