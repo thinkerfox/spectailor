@@ -581,14 +581,14 @@
                             <address>
                                 Tübitak Gebze Yerleşkesi İdari Kuluçka <br> Binası 26/41 Gebze, Kocaeli
                             </address>
-                            <a class="spectailor-link small-link" href="mailto:hello@spectailor.co">Get directions</a>
+                            <a class="spectailor-link small-link" href="https://www.google.com/maps/place/Marmara+Teknokent/@40.7911646,29.4613693,17.27z/data=!4m12!1m6!3m5!1s0x14cb21da08d63b0f:0xd5496623aa7b626f!2zVMOcQsSwVEFLIE1BUlRFSw!8m2!3d40.7960302!4d29.4615546!3m4!1s0x0:0xa377ce0f80ed1f85!8m2!3d40.7908384!4d29.4620651" target="_blank">Get directions</a>
                         </div>
                         <div class="contact-point clearfix">
                             <h4>Kolektif House</h4>
                             <address>
                                 Esentepe Mah. Talatpaşa Cad. No: 5 <br> (Harman Sok. Girişi) Şişli, İstanbul
                             </address>
-                            <a class="spectailor-link small-link" href="mailto:hello@spectailor.co">Get directions</a>
+                            <a class="spectailor-link small-link" href="https://goo.gl/maps/VGuxs55NBut1jo8v6" target="_blank">Get directions</a>
                         </div>
                     </div>
                     <div class="col-2"></div>
