@@ -342,7 +342,7 @@
                         <ul class="socials">
                             <li><a href="https://instagram.com/spectailor" target="_blank" id="icon-instagram"></a></li>
                             <li><a href="https://www.linkedin.com/company/spectailor" target="_blank" id="icon-linkedin"></a></li>
-                            <li><a href="" id="icon-dribble"></a></li>
+                            <li><a href="https://dribbble.com/spectailor" target="_blank" id="icon-dribble"></a></li>
                             <li><a href="https://medium.com/spectailor" target="_blank" id="icon-medium"></a></li>
                         </ul>
                     </div>
@@ -634,7 +634,7 @@
                         <ul class="socials">
                             <li><a href="https://instagram.com/spectailor" target="_blank" id="icon-instagram"></a></li>
                             <li><a href="https://www.linkedin.com/company/spectailor" target="_blank" id="icon-linkedin"></a></li>
-                            <li><a href="" id="icon-dribble"></a></li>
+                            <li><a href="https://dribbble.com/spectailor" target="_blank" id="icon-dribble"></a></li>
                             <li><a href="https://medium.com/spectailor" target="_blank" id="icon-medium"></a></li>
                         </ul>
                     </div>
