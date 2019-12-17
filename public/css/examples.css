@@ -36,7 +36,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 100%;
     margin:0;
     padding:0;
-    color:#444;
 }
 q:before,q:after {
     content:'';
@@ -49,8 +48,6 @@ abbr,acronym { border: 0;
  * --------------------------------------- */
 body{
 	font-family: arial,helvetica;
-	color: #333;
-	color: rgba(0,0,0,0.5);
 }
 .wrap{
 	margin-left: auto;

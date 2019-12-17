@@ -10697,6 +10697,7 @@ body {
   position: relative;
   font-family: arboriaBook;
   background: #fff;
+  color: black;
 }
 
 .max-container {
@@ -10770,7 +10771,7 @@ section.section.section-intro .main-container {
   height: calc(100vh - 78px);
 }
 @media only screen and (max-width: 767px) {
-  section.section.section-intro {
+  section.section.section-intro .main-container {
     height: auto;
   }
 }
@@ -10916,6 +10917,7 @@ section.section-footer {
   font-family: arboriaBook;
   font-size: 16px;
   background: transparent;
+  width: 80px;
 }
 
 .opening {

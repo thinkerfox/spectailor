@@ -37,6 +37,7 @@ body{
     position: relative;
     font-family: arboriaBook;
     background: #fff;
+    color: black;
 }
 
 .max-container{
@@ -100,7 +101,10 @@ section.section.section-intro{
         height: calc(100vh - 78px);
     }
     @include xs{
-        height: auto;
+        .main-container{
+            height: auto;
+        }
+
     }
 }
 section.section-content{
@@ -236,6 +240,7 @@ section.section-intro{
     font-family: arboriaBook;
     font-size: 16px;
     background: transparent;
+    width: 80px;
 }
 
 
