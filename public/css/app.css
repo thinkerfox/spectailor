@@ -10893,6 +10893,11 @@ section.section-footer {
 .pill-container {
   overflow-x: scroll;
   width: 100vw;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* required */
+  z-index: 9999;
 }
 
 ::-webkit-scrollbar {
@@ -10907,11 +10912,6 @@ section.section-footer {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 10px;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  /* required */
-  z-index: 9999;
 }
 
 .nav-pills .nav-link {

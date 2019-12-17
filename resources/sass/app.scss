@@ -220,6 +220,10 @@ section.section-intro{
 .pill-container{
     overflow-x: scroll;
     width: 100vw;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
+    z-index: 9999;
 }::-webkit-scrollbar {
      display: none;
  }
@@ -231,10 +235,7 @@ section.section-intro{
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 10px;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0; /* required */
-    z-index: 9999;
+
 }
 .nav-pills .nav-link{
     color: black;
