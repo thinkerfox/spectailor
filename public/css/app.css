@@ -10771,7 +10771,7 @@ section.section.section-intro .main-container {
 }
 @media only screen and (max-width: 767px) {
   section.section.section-intro {
-    height: calc(100vh - 78px);
+    height: auto;
   }
 }
 
@@ -11173,6 +11173,11 @@ footer ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
   margin-top: 5px;
+}
+@media only screen and (max-width: 767px) {
+  footer ul {
+    text-align: center;
+  }
 }
 footer ul li {
   display: inline-block;
