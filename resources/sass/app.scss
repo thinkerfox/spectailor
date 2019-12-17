@@ -218,7 +218,8 @@ section.section-intro{
     padding-top: 10px;
 }
 .nav-pills{
-     display: -webkit-inline-box;
+     display: inline-box;
+    display: -webkit-inline-box;
     overflow-x: scroll;
     width: 100vw;
     background: #FCF9F9;

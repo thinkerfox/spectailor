@@ -10891,6 +10891,7 @@ section.section-footer {
 }
 
 .nav-pills {
+  display: inline-box;
   display: -webkit-inline-box;
   overflow-x: scroll;
   width: 100vw;
