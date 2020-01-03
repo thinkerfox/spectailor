@@ -148,58 +148,52 @@
                 </div>
                 <div class="tab-pane fade" id="refine-pane" role="tabpanel" aria-labelledby="refine-tab">
                     <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-md-4 col-12">
-                                            <img src="{{ asset('img/refine.svg') }}" alt="Audit" class="img-fluid section-img">
-                                        </div>
-                                        <div class="col-1"></div>
-                                        <div class="col-md-7 col-12">
-                                            <h2>
-                                                Refine
-                                            </h2>
-                                            <h3>
-                                                We constantly evaluate the efficiency of the UX audit to yield optimum results.
-                                            </h3>
-                                            <div class="row">
-                                                <div class="col-12"><h4>Activities</h4></div>
-                                                <div class="col-12">
-                                                    <p>
-                                                        User journey / experience map <br/>
-                                                        Wireframing & prototyping <br/>
-                                                        User tests <br/>
-                                                        Card sorting
-                                                    </p>
-                                                </div>
+                        <div class="main-container">
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-md-4 col-12">
+                                        <img src="{{ asset('img/refine.svg') }}" alt="Audit" class="img-fluid section-img">
+                                    </div>
+                                    <div class="col-1"></div>
+                                    <div class="col-md-7 col-12">
+                                        <h2>
+                                            Refine
+                                        </h2>
+                                        <h3>
+                                            We constantly evaluate the efficiency of the UX audit to yield optimum results.
+                                        </h3>
+                                        <div class="row">
+                                            <div class="col-12"><h4>Activities</h4></div>
+                                            <div class="col-12">
+                                                <p>
+                                                    User journey / experience map <br/>
+                                                    Wireframing & prototyping <br/>
+                                                    User tests <br/>
+                                                    Card sorting
+                                                </p>
                                             </div>
-                                            <div class="row">
-                                                <div class="col-12"><h4>Value</h4></div>
-                                                <div class="col-12">
-                                                    <p>
-                                                        Ongoing growth <br/>
-                                                        Rapid adaptability to changing market conditions <br/>
-                                                        Increased conversion rate <br/>
-                                                        User acceptance
-                                                    </p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12"><h4>Value</h4></div>
+                                            <div class="col-12">
+                                                <p>
+                                                    Ongoing growth <br/>
+                                                    Rapid adaptability to changing market conditions <br/>
+                                                    Increased conversion rate <br/>
+                                                    User acceptance
+                                                </p>
 
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </section>
                 </div>
                 <div class="tab-pane fade" id="strategy-pane" role="tabpanel" aria-labelledby="strategy-tab">
                     <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
+                        <div class="main-container">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-md-4 col-12">
@@ -239,15 +233,11 @@
                                 </div>
                             </div>
                         </div>
-                            </div>
-                        </div>
                     </section>
                 </div>
                 <div class="tab-pane fade" id="tailoring-pane" role="tabpanel" aria-labelledby="tailoring-tab">
                     <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
+                        <div class="main-container">
                             <div class="content">
                                 <div class="row">
                                     <div class="col-md-4 col-12">
@@ -285,8 +275,6 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
                             </div>
                         </div>
                     </section>

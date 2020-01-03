@@ -1,6 +1,5 @@
 header{
-    padding-top: 15px;
-    padding-bottom: 15px;
+
     .spectailor-btn{
         float:right;
     }
@@ -8,8 +7,8 @@ header{
 .sticky-header{
     position: sticky;
     position: -webkit-sticky;
-    top: 0; /* required */
-    z-index: 9999;
+    top: 35px; /* required */
+    z-index: 9;
     @include xs{
         position: static;
     }
