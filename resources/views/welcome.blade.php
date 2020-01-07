@@ -458,7 +458,7 @@
     $(document).ready(function(){
         if(window.location.hash && window.autoscrollexecuted === false){
             $('html, body').animate({
-                scrollTop: $(window.location.hash.replace('#', '#section-')).offset().top - 20
+                scrollTop: $(window.location.hash.replace('#', '#section-')).offset().top - 50
             }, 100);
             window.autoscrollexecuted = true;
         }
