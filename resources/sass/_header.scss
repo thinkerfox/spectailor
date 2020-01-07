@@ -1,15 +1,9 @@
 header{
-
     .spectailor-btn{
         float:right;
     }
 }
 .sticky-header{
-    position: sticky;
-    position: -webkit-sticky;
-    top: 35px; /* required */
+    margin-top: 25px; /* required */
     z-index: 9;
-    @include xs{
-        position: static;
-    }
 }

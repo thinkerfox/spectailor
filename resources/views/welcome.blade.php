@@ -17,13 +17,14 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/fullpage.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('css/examples.css') }}" />
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
 </head>
 
 <body>
 <header class="sticky-header">
     <main class="max-container">
         <div class="row align-items-center">
-            <div class="col-6 col-lg-3">
+            <div class="col-6 col-lg-6">
                 <div class="logo-container clearfix">
                     <a href="#home" class="sticky-header">
                         <img src="{{ asset('img/logo.svg') }}" class="spectailor-logo" alt="Spectailor">
@@ -31,13 +32,12 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6"></div>
-            <div class="col-6 col-lg-3"><a class="spectailor-btn sticky-header" href="#contact" id="get-in-touch-btn">GET IN TOUCH</a></div>
+            <div class="col-6 col-lg-6"><a class="spectailor-btn navigation"  data-href="#section-contact" id="get-in-touch-btn">GET IN TOUCH</a></div>
         </div>
     </main>
 </header>
 
-<div class="" id="fullpage">
+<main>
     <section class="section spec-section section-intro" data-anchor="home" id="section-intro">
         <div class="main-container">
             <div class="opening">
@@ -46,250 +46,209 @@
                         <img src="{{ asset('img/intro.svg') }}" alt="Welcome to Spectailor" class="img-fluid">
                     </div>
                     <div class="col-md-5 col-12">
-                        <span class="hero-light">Bespoke</span>
-                        <h1>User Experience</h1>
-                        <p>We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.</p>
-                        <button class="spectailor-btn dark-btn hidden-xs" id="explore-btn">EXPLORE NOW</button>
+                        <span class="hero-light wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">Bespoke</span>
+                        <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">User Experience</h1>
+                        <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.</p>
+                        <button class="spectailor-btn dark-btn hidden-xs wow fadeIn navigation" data-href="#section-audit" data-wow-duration="1s" data-wow-delay="0.5s" id="explore-btn">EXPLORE NOW</button>
                     </div>
                     <div class="col-1"></div>
                     <div class="col-12 col-md-6 hidden-xs">
-                        <img src="{{ asset('img/intro.svg') }}" alt="Welcome to Spectailor" class="img-fluid">
+                        <img src="{{ asset('img/intro.svg') }}" class="img-fluid wow fadeInRight" alt="Welcome to Spectailor" data-wow-duration="1s" data-wow-delay="0s" class="img-fluid">
                     </div>
                 </div>
             </div>
             <div class="opening-end hidden-xs">
                 <div class="row align-items-center">
-                    <div class="col-6">
+                    <div class="col-6 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                         <span class="scroll-down">Scroll Down</span>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0s">
                         <a href="https://thinkerfox.com" class="link-black" target="_blank"><span class="thinkerfox">Business<br/>Partner</span></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section spec-section" data-anchor="audit" id="section-audit">
-        <div class="tabbable">
-            <div class="container pill-container">
-                <ul class="nav nav-pills " id="tab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="audit-tab" data-toggle="pill" href="#audit-pane" role="tab" aria-controls="home" aria-selected="true">Audit</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="refine-tab" data-toggle="pill" href="#refine-pane" role="tab" aria-controls="profile" aria-selected="false">Refine</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="strategy-tab" data-toggle="pill" href="#strategy-pane" role="tab" aria-controls="contact" aria-selected="false">Strategy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="tailoring-tab" data-toggle="pill" href="#tailoring-pane" role="tab" aria-controls="contact" aria-selected="false">Tailoring</a>
-                    </li>
-                </ul>
+
+    <section class="spec-section section-content" id="section-audit">
+        <div class="row align-items-center fullHeight">
+            <div class="col-12">
+                <div class="main-container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-4 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                <img src="{{ asset('img/audit.svg') }}"  alt="Audit" class="img-fluid section-img">
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-7 col-12" >
+                                <h2 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0s">
+                                    Audit
+                                </h2>
+                                <h3 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.4s">
+                                    Our priority is always to gather and understand data.
+                                </h3>
+                                <div class="row">
+                                    <div class="col-md-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                        <h4>Activities</h4>
+                                        <p>
+                                            <span>Stakeholder interviews </span>
+                                            <span>User interviews  </span>
+                                            <span>Field studies  </span>
+                                            <span>Diary studies  </span>
+                                            <span>Experience sampling  </span>
+                                            <span>Competitor analysis  </span>
+                                            <span>Industry research</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.8s">
+                                        <h4>Value</h4>
+                                        <p>
+                                            <span>Organisational alignment & focus </span>
+                                            <span>Deeper understanding of user issues </span>
+                                            <span>Insightful experience map for the acquisition </span>
+                                            <span>Improved awareness of future market expectations </span>
+                                            <span>Sound strategy process</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="tab-content" id="tabContent">
-                <div class="tab-pane fade show active" id="audit-pane" role="tabpanel" aria-labelledby="audit-tab">
-                    <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
-                                    <div class="content">
-                                        <div class="row ">
-                                            <div class="col-md-4 col-12">
-                                                <img src="{{ asset('img/audit.svg') }}" alt="Audit" class="img-fluid section-img">
-                                            </div>
-                                            <div class="col-1"></div>
-                                            <div class="col-md-7 col-12">
-                                                <h2>
-                                                    Audit
-                                                </h2>
-                                                <h3>
-                                                    Our priority is always to gather and understand data.
-                                                </h3>
-                                                <div class="row">
-                                                    <div class="col-12"><h4>Activities</h4></div>
-                                                    <div class="col-md-4 col-12">
-                                                        <p>
-                                                            Stakeholder interviews <br/>
-                                                            User interviews <br/>
-                                                            Field studies <br/>
-                                                            Diary studies
-                                                        </p>
+        </div>
+    </section>
 
-                                                    </div>
-                                                    <div class="col-md-8 col-12">
-                                                        <p>
-                                                            Experience sampling <br/>
-                                                            Competitor analysis and industry research <br/>
-                                                            And more…
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12"><h4>Value</h4></div>
-                                                    <div class="col-12">
-                                                        <p>
-                                                            Organisational alignment & focus <br/>
-                                                            Deeper understanding of user issues <br/>
-                                                            Insightful experience map for the acquisition <br/>
-                                                            Improved awareness of future market expectations <br/>
-                                                            Sound strategy process
-                                                        </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+    <section class="spec-section section-content" id="section-refine">
+        <div class="row align-items-center fullHeight">
+            <div class="col-12">
+                <div class="main-container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-4 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                <img src="{{ asset('img/refine.svg') }}" alt="Refine" class="img-fluid section-img">
                             </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="tab-pane fade" id="refine-pane" role="tabpanel" aria-labelledby="refine-tab">
-                    <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
-                                <div class="content">
-                                    <div class="row">
-                                        <div class="col-md-4 col-12">
-                                            <img src="{{ asset('img/refine.svg') }}" alt="Audit" class="img-fluid section-img">
-                                        </div>
-                                        <div class="col-1"></div>
-                                        <div class="col-md-7 col-12">
-                                            <h2>
-                                                Refine
-                                            </h2>
-                                            <h3>
-                                                We constantly evaluate the efficiency of the UX audit to yield optimum results.
-                                            </h3>
-                                            <div class="row">
-                                                <div class="col-12"><h4>Activities</h4></div>
-                                                <div class="col-12">
-                                                    <p>
-                                                        User journey / experience map <br/>
-                                                        Wireframing & prototyping <br/>
-                                                        User tests <br/>
-                                                        Card sorting
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-12"><h4>Value</h4></div>
-                                                <div class="col-12">
-                                                    <p>
-                                                        Ongoing growth <br/>
-                                                        Rapid adaptability to changing market conditions <br/>
-                                                        Increased conversion rate <br/>
-                                                        User acceptance
-                                                    </p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <div class="tab-pane fade" id="strategy-pane" role="tabpanel" aria-labelledby="strategy-tab">
-                    <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
-                            <div class="content">
+                            <div class="col-1"></div>
+                            <div class="col-md-7 col-12">
+                                <h2 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0s">
+                                    Refine
+                                </h2>
+                                <h3 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.2s">
+                                    We constantly evaluate the efficiency of the UX audit to yield optimum results.
+                                </h3>
                                 <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <img src="{{ asset('img/strategy.svg') }}" alt="Audit" class="img-fluid section-img">
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                        <h4>Activities</h4>
+                                        <p>
+                                            <span>User journey / experience map </span>
+                                            <span>Wireframing & prototyping </span>
+                                            <span>User tests </span>
+                                            <span>Card sorting</span>
+                                        </p>
                                     </div>
-                                    <div class="col-1"></div>
-                                    <div class="col-md-7 col-12">
-                                        <h2>
-                                            Strategy
-                                        </h2>
-                                        <h3>
-                                            In the light of the audit results, we identify less-than-perfect areas and user-oriented strategy.
-                                        </h3>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Activities</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Personas, scenarios, contexts modeling <br/>
-                                                    Information architecture <br/>
-                                                    MVP definition, product roadmap <br/>
-                                                    Workshops
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Value</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Reconceptualisation <br/>
-                                                    Target audience definition <br/>
-                                                    Vision creation experience <br/>
-                                                    Lucid process control
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.4s">
+                                        <h4>Value</h4>
+                                        <p>
+                                            <span>Ongoing growth </span>
+                                            <span>Rapid adaptability to changing market conditions </span>
+                                            <span>Increased conversion rate </span>
+                                            <span>User acceptance</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                            </div>
-                        </div>
-                    </section>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="tailoring-pane" role="tabpanel" aria-labelledby="tailoring-tab">
-                    <section class="spec-section section-content">
-                        <div class="row align-items-center fullHeight">
-                            <div class="col-12">
-                                <div class="main-container">
-                            <div class="content">
+            </div>
+        </div>
+    </section>
+
+    <section class="spec-section section-content" id="section-strategy">
+        <div class="row align-items-center fullHeight">
+            <div class="col-12">
+                <div class="main-container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-4 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                <img src="{{ asset('img/strategy.svg') }}" alt="Strategy" class="img-fluid section-img">
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-7 col-12">
+                                <h2 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0s">
+                                    Strategy
+                                </h2>
+                                <h3 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.2s">
+                                    In the light of the audit results, we identify less-than-perfect areas and user-oriented strategy.
+                                </h3>
                                 <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <img src="{{ asset('img/tailoring.svg') }}" alt="Audit" class="img-fluid section-img">
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                        <h4>Activities</h4>
+                                        <p>
+                                            <span>Personas, scenarios, contexts modeling </span>
+                                            <span>Information architecture </span>
+                                            <span>MVP definition, product roadmap </span>
+                                            <span>Workshops</span>
+                                        </p>
                                     </div>
-                                    <div class="col-1"></div>
-                                    <div class="col-md-7 col-12">
-                                        <h2>
-                                            Tailoring
-                                        </h2>
-                                        <h3>
-                                            We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.
-                                        </h3>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Activities</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Solutions & conceptual design <br/>
-                                                    Interaction & visual design <br/>
-                                                    Data visualizations <br/>
-                                                    UI component libraries
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Value</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Best practices and standards <br/>
-                                                    Mitigation for inefficient source <br/>
-                                                    Purposeful design <br/>
-                                                    Better SEO planning
-                                                </p>
-                                            </div>
-                                        </div>
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.4s">
+                                        <h4>Value</h4>
+                                        <p>
+                                            <span>Reconceptualisation </span>
+                                            <span>Target audience definition </span>
+                                            <span>Vision creation experience </span>
+                                            <span>Lucid process control</span>
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="spec-section section-content" id="section-tailoring">
+        <div class="row align-items-center fullHeight">
+            <div class="col-12">
+                <div class="main-container">
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-4 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                <img src="{{ asset('img/tailoring.svg') }}" alt="Tailoring" class="img-fluid section-img">
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-md-7 col-12">
+                                <h2 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0s">
+                                    Tailoring
+                                </h2>
+                                <h3 class="wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.2s">
+                                    We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.
+                                </h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                        <h4>Activities</h4>
+                                        <p>
+                                            <span>Solutions & conceptual design </span>
+                                            <span>Interaction & visual design </span>
+                                            <span>Data visualizations </span>
+                                            <span>UI component libraries</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.4s">
+                                        <h4>Value</h4>
+                                        <p>
+                                            <span>Best practices and standards </span>
+                                            <span>Mitigation for inefficient source </span>
+                                            <span>Purposeful design </span>
+                                            <span>Better SEO planning</span>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,18 +260,18 @@
                     <div class="content">
                         <div class="row">
                             <div class="col-md-4 col-12">
-                                <h2>
+                                <h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s">
                                     Our Offices
                                 </h2>
-                                <p class="contact-sub">Don’t hesitate. Feel free to visit us.</p>
-                                <div class="contact-point clearfix">
+                                <p class="contact-sub wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.1s">Don’t hesitate. Feel free to visit us.</p>
+                                <div class="contact-point clearfix wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
                                     <h4>Tubitak Martek</h4>
                                     <address>
                                         Tübitak Gebze Yerleşkesi İdari Kuluçka <br> Binası 26/41 Gebze, Kocaeli
                                     </address>
                                     <a class="spectailor-link small-link" href="mailto:hello@spectailor.co">Get directions</a>
                                 </div>
-                                <div class="contact-point clearfix">
+                                <div class="contact-point clearfix wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
                                     <h4>Kolektif House</h4>
                                     <address>
                                         Esentepe Mah. Talatpaşa Cad. No: 5 <br> (Harman Sok. Girişi) Şişli, İstanbul
@@ -322,27 +281,27 @@
                             </div>
                             <div class="col-2"></div>
                             <div class="col-md-6 col-12">
-                                <h2>
+                                <h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
                                     Tailor with us!
                                 </h2>
-                                <p class="contact-sub">Our form is not cool enough? <br class="hidden-lg hidden-sm hidden-md"> <a class="spectailor-link" href="mailto:hello@spectailor.co">Send us an e-mail</a></p>
+                                <p class="contact-sub wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.6s">Our form is not cool enough? <br class="hidden-lg hidden-sm hidden-md"> <a class="spectailor-link" href="mailto:hello@spectailor.co">Send us an e-mail</a></p>
                                 <div class="row">
                                     <div class="col-12">
                                         <form action="{{ route('mail.contact') }}" method="POST" id="spectailor-form">
                                             @csrf
-                                            <div class="form-set">
+                                            <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
                                                 <label for="name">Your full name</label>
                                                 <input type="text" name="name" id="name_field" required placeholder="How should we call you?">
                                             </div>
-                                            <div class="form-set">
+                                            <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
                                                 <label for="email">Your fancy mail</label>
                                                 <input type="text" name="email" id="email_field" required placeholder="Your mail adress">
                                             </div>
-                                            <div class="form-set">
+                                            <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
                                                 <label for="body">Your message</label>
                                                 <textarea name="body" id="myTextArea" required rows="1" placeholder="What’s on your mind?"></textarea>
                                             </div>
-                                            <div class="form-set">
+                                            <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
                                                 <button class="spectailor-btn dark-btn hand-logo" id="spectailor-form-submit" type="submit"><i class="icon-hand"></i> SAY HI!</button>
                                             </div>
                                         </form>
@@ -357,13 +316,13 @@
         <footer>
             <div class="max-container">
                 <div class="row align-items-center">
-                    <div class="col-md-4 hidden-xs">
+                    <div class="col-md-4 hidden-xs wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s">
                         <p class="copyright">© 2019 Spectailor - All Rights Reserved</p>
                     </div>
-                    <div class="col-md-4 footer-logo hidden-xs">
+                    <div class="col-md-4 footer-logo hidden-xs wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
                         <img src="{{ asset('img/logo.svg') }}" alt="Spectailor">
                     </div>
-                    <div class="col-md-4 col-12">
+                    <div class="col-md-4 col-12 wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <ul class="socials">
                             <li><a href="https://instagram.com/spectailor" target="_blank" id="icon-instagram"></a></li>
                             <li><a href="https://www.linkedin.com/company/spectailor" target="_blank" id="icon-linkedin"></a></li>
@@ -371,36 +330,24 @@
                             <li><a href="https://medium.com/spectailor" target="_blank" id="icon-medium"></a></li>
                         </ul>
                     </div>
-                    <div class="col-12 hidden-md hidden-sm hidden-lg">
+                    <div class="col-12 hidden-md hidden-sm hidden-lg wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s">
                         <p class="copyright">© 2019 Spectailor - All Rights Reserved</p>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
-</div>
+</main>
 </body>
 <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-
 <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/fullpage.js') }}"></script>
-<script type="text/javascript">
-    if($(window).width() > 990){
-        new fullpage('#fullpage', {
-            anchors:['home', 'audit', 'contact'],
-            navigation: true,
-            navigationPosition: 'right',
-            navigationTooltips: ['Home', 'Audit', 'Contact'],
-            scrollingSpeed: 1000,
-            paddingTop: '0px'
-        });
-    }
+<script type="text/javascript" src="{{ asset('js/wow.js') }}"></script>
 
-</script>
 <script>
+    new WOW().init();
     if($( window ).height() < 800){
         $('.opening-end').addClass('static-end');
         $('footer').addClass('static-footer-end');
@@ -493,6 +440,48 @@
                 $('#spectailor-form-submit').text('SUCCESS').removeClass('form-wait').addClass('form-success')
             }
         });
+    });
+
+    $(".navigation").click(function() {
+        var target = $(this).data('href');
+        $('a.active').each(function(){
+            $(this).removeClass('active');
+        });
+        $(this).addClass('active');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 1000);
+    });
+
+    $(document).ready(function(){
+        if(window.location.hash){
+            $('html, body').animate({
+                scrollTop: $(window.location.hash.replace('#', '#section-')).offset().top
+            }, 100);
+        }
+    });
+
+    $(window).scroll(function (event) {
+        var scroll = $(window).scrollTop();
+
+        if($(this).scrollTop() >= $('#section-contact').position().top-20){
+            window.location.hash = '#contact';
+        }
+        else if($(this).scrollTop() >= $('#section-tailoring').position().top-20){
+            window.location.hash = '#tailoring';
+        }
+        else if($(this).scrollTop() >= $('#section-strategy').position().top-20){
+            window.location.hash = '#strategy';
+        }
+        else if($(this).scrollTop() >= $('#section-refine').position().top-20){
+            window.location.hash = '#refine';
+        }
+        else if($(this).scrollTop() >= $('#section-audit').position().top-20){
+            window.location.hash = '#audit';
+        }
+        else{
+            window.location.hash = '';
+        }
     });
 </script>
 

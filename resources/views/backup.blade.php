@@ -148,41 +148,45 @@
                 </div>
                 <div class="tab-pane fade" id="refine-pane" role="tabpanel" aria-labelledby="refine-tab">
                     <section class="spec-section section-content">
-                        <div class="main-container">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <img src="{{ asset('img/refine.svg') }}" alt="Audit" class="img-fluid section-img">
-                                    </div>
-                                    <div class="col-1"></div>
-                                    <div class="col-md-7 col-12">
-                                        <h2>
-                                            Refine
-                                        </h2>
-                                        <h3>
-                                            We constantly evaluate the efficiency of the UX audit to yield optimum results.
-                                        </h3>
+                        <div class="row align-items-center fullHeight">
+                            <div class="col-12">
+                                <div class="main-container">
+                                    <div class="content">
                                         <div class="row">
-                                            <div class="col-12"><h4>Activities</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    User journey / experience map <br/>
-                                                    Wireframing & prototyping <br/>
-                                                    User tests <br/>
-                                                    Card sorting
-                                                </p>
+                                            <div class="col-md-4 col-12">
+                                                <img src="{{ asset('img/refine.svg') }}" alt="Audit" class="img-fluid section-img">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Value</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Ongoing growth <br/>
-                                                    Rapid adaptability to changing market conditions <br/>
-                                                    Increased conversion rate <br/>
-                                                    User acceptance
-                                                </p>
+                                            <div class="col-1"></div>
+                                            <div class="col-md-7 col-12">
+                                                <h2>
+                                                    Refine
+                                                </h2>
+                                                <h3>
+                                                    We constantly evaluate the efficiency of the UX audit to yield optimum results.
+                                                </h3>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Activities</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            User journey / experience map <br/>
+                                                            Wireframing & prototyping <br/>
+                                                            User tests <br/>
+                                                            Card sorting
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Value</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Ongoing growth <br/>
+                                                            Rapid adaptability to changing market conditions <br/>
+                                                            Increased conversion rate <br/>
+                                                            User acceptance
+                                                        </p>
 
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -193,40 +197,44 @@
                 </div>
                 <div class="tab-pane fade" id="strategy-pane" role="tabpanel" aria-labelledby="strategy-tab">
                     <section class="spec-section section-content">
-                        <div class="main-container">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <img src="{{ asset('img/strategy.svg') }}" alt="Audit" class="img-fluid section-img">
-                                    </div>
-                                    <div class="col-1"></div>
-                                    <div class="col-md-7 col-12">
-                                        <h2>
-                                            Strategy
-                                        </h2>
-                                        <h3>
-                                            In the light of the audit results, we identify less-than-perfect areas and user-oriented strategy.
-                                        </h3>
+                        <div class="row align-items-center fullHeight">
+                            <div class="col-12">
+                                <div class="main-container">
+                                    <div class="content">
                                         <div class="row">
-                                            <div class="col-12"><h4>Activities</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Personas, scenarios, contexts modeling <br/>
-                                                    Information architecture <br/>
-                                                    MVP definition, product roadmap <br/>
-                                                    Workshops
-                                                </p>
+                                            <div class="col-md-4 col-12">
+                                                <img src="{{ asset('img/strategy.svg') }}" alt="Audit" class="img-fluid section-img">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Value</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Reconceptualisation <br/>
-                                                    Target audience definition <br/>
-                                                    Vision creation experience <br/>
-                                                    Lucid process control
-                                                </p>
+                                            <div class="col-1"></div>
+                                            <div class="col-md-7 col-12">
+                                                <h2>
+                                                    Strategy
+                                                </h2>
+                                                <h3>
+                                                    In the light of the audit results, we identify less-than-perfect areas and user-oriented strategy.
+                                                </h3>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Activities</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Personas, scenarios, contexts modeling <br/>
+                                                            Information architecture <br/>
+                                                            MVP definition, product roadmap <br/>
+                                                            Workshops
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Value</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Reconceptualisation <br/>
+                                                            Target audience definition <br/>
+                                                            Vision creation experience <br/>
+                                                            Lucid process control
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -237,40 +245,44 @@
                 </div>
                 <div class="tab-pane fade" id="tailoring-pane" role="tabpanel" aria-labelledby="tailoring-tab">
                     <section class="spec-section section-content">
-                        <div class="main-container">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-md-4 col-12">
-                                        <img src="{{ asset('img/tailoring.svg') }}" alt="Audit" class="img-fluid section-img">
-                                    </div>
-                                    <div class="col-1"></div>
-                                    <div class="col-md-7 col-12">
-                                        <h2>
-                                            Tailoring
-                                        </h2>
-                                        <h3>
-                                            We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.
-                                        </h3>
+                        <div class="row align-items-center fullHeight">
+                            <div class="col-12">
+                                <div class="main-container">
+                                    <div class="content">
                                         <div class="row">
-                                            <div class="col-12"><h4>Activities</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Solutions & conceptual design <br/>
-                                                    Interaction & visual design <br/>
-                                                    Data visualizations <br/>
-                                                    UI component libraries
-                                                </p>
+                                            <div class="col-md-4 col-12">
+                                                <img src="{{ asset('img/tailoring.svg') }}" alt="Audit" class="img-fluid section-img">
                                             </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12"><h4>Value</h4></div>
-                                            <div class="col-12">
-                                                <p>
-                                                    Best practices and standards <br/>
-                                                    Mitigation for inefficient source <br/>
-                                                    Purposeful design <br/>
-                                                    Better SEO planning
-                                                </p>
+                                            <div class="col-1"></div>
+                                            <div class="col-md-7 col-12">
+                                                <h2>
+                                                    Tailoring
+                                                </h2>
+                                                <h3>
+                                                    We offer uniquely suited experience to your target group and provide novel solutions to create added value for your business.
+                                                </h3>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Activities</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Solutions & conceptual design <br/>
+                                                            Interaction & visual design <br/>
+                                                            Data visualizations <br/>
+                                                            UI component libraries
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12"><h4>Value</h4></div>
+                                                    <div class="col-12">
+                                                        <p>
+                                                            Best practices and standards <br/>
+                                                            Mitigation for inefficient source <br/>
+                                                            Purposeful design <br/>
+                                                            Better SEO planning
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
