@@ -21,7 +21,7 @@
 </head>
 
 <body>
-<header class="sticky-header">
+<header class="sticky-header" id="section-home">
     <main class="max-container">
         <div class="row align-items-center">
             <div class="col-6 col-lg-6">
@@ -38,8 +38,9 @@
 </header>
 
 <main>
-    <section class="section spec-section section-intro" data-anchor="home" id="section-intro">
-        <div class="main-container">
+    <section class="section spec-section section-intro" data-anchor="home">
+        <div class="main-container ">
+            <div class="first-container fullHeight">
             <div class="opening">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 hidden-lg hidden-md hidden-sm">
@@ -52,10 +53,11 @@
                         <button class="spectailor-btn dark-btn hidden-xs wow fadeIn navigation" data-href="#section-audit" data-wow-duration="1s" data-wow-delay="0.5s" id="explore-btn">EXPLORE NOW</button>
                     </div>
                     <div class="col-1"></div>
-                    <div class="col-12 col-md-6 hidden-xs">
-                        <img src="{{ asset('img/intro.svg') }}" class="img-fluid wow fadeInRight" alt="Welcome to Spectailor" data-wow-duration="1s" data-wow-delay="0s" class="img-fluid">
+                    <div class="col-12 col-md-6 colNo hidden-xs">
+                        <img src="{{ asset('img/intro.svg') }}" class="img-fluid wow fullWidth fadeInRight" alt="Welcome to Spectailor" data-wow-duration="1s" data-wow-delay="0s" >
                     </div>
                 </div>
+            </div>
             </div>
             <div class="opening-end hidden-xs">
                 <div class="row align-items-center">
@@ -269,14 +271,14 @@
                                     <address>
                                         Tübitak Gebze Yerleşkesi İdari Kuluçka <br> Binası 26/41 Gebze, Kocaeli
                                     </address>
-                                    <a class="spectailor-link small-link" href="mailto:hello@spectailor.co">Get directions</a>
+                                    <a class="spectailor-link small-link" target="_blank" href="https://www.google.com/maps/place/Marmara+Teknokent/@40.7911646,29.4613693,17z/data=!4m12!1m6!3m5!1s0x14cb21da08d63b0f:0xd5496623aa7b626f!2zVMOcQsSwVEFLIE1BUlRFSw!8m2!3d40.7960302!4d29.4615546!3m4!1s0x0:0xa377ce0f80ed1f85!8m2!3d40.7908384!4d29.4620651">Get directions</a>
                                 </div>
                                 <div class="contact-point clearfix wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
                                     <h4>Kolektif House</h4>
                                     <address>
                                         Esentepe Mah. Talatpaşa Cad. No: 5 <br> (Harman Sok. Girişi) Şişli, İstanbul
                                     </address>
-                                    <a class="spectailor-link small-link" href="mailto:hello@spectailor.co">Get directions</a>
+                                    <a class="spectailor-link small-link" target="_blank" href="https://www.google.com/maps/place/Kolektif+House/@41.0797124,29.0062754,17z/data=!3m1!4b1!4m5!3m4!1s0x14cab66774177699:0x936fefd8e611f9de!8m2!3d41.0797124!4d29.0084641">Get directions</a>
                                 </div>
                             </div>
                             <div class="col-2"></div>
@@ -452,19 +454,20 @@
             scrollTop: $(target).offset().top
         }, 1000);
     });
-
+    window.autoscrollexecuted = false;
     $(document).ready(function(){
-        if(window.location.hash){
+        if(window.location.hash && window.autoscrollexecuted === false){
             $('html, body').animate({
-                scrollTop: $(window.location.hash.replace('#', '#section-')).offset().top
+                scrollTop: $(window.location.hash.replace('#', '#section-')).offset().top - 20
             }, 100);
+            window.autoscrollexecuted = true;
         }
     });
 
     $(window).scroll(function (event) {
         var scroll = $(window).scrollTop();
 
-        if($(this).scrollTop() >= $('#section-contact').position().top-20){
+        if($(this).scrollTop() >= $('#section-contact').position().top-100){
             window.location.hash = '#contact';
         }
         else if($(this).scrollTop() >= $('#section-tailoring').position().top-20){
@@ -480,7 +483,7 @@
             window.location.hash = '#audit';
         }
         else{
-            window.location.hash = '';
+            window.location.hash = '#home';
         }
     });
 </script>

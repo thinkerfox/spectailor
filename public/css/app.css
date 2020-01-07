@@ -240,7 +240,7 @@ header .spectailor-btn {
 }
 
 .sticky-header {
-  margin-top: 25px;
+  margin-top: 46px;
   /* required */
   z-index: 9;
 }
@@ -10775,6 +10775,9 @@ section.section-footer {
   background-color: #fff;
   padding: 80px 0 30px;
 }
+section.section-footer .content {
+  margin-bottom: 50px;
+}
 
 section.section-intro {
   height: calc(100vh - 128px);
@@ -10929,9 +10932,12 @@ section.section-intro .max-container {
   overflow: hidden;
 }
 
-.opening {
-  padding-top: 10%;
+.first-container {
+  display: table-cell;
+  vertical-align: middle;
+  height: calc(100vh - 205px);
 }
+
 @media only screen and (max-width: 767px) {
   .opening {
     margin-top: 2px;
@@ -10998,8 +11004,8 @@ section.section-intro .max-container {
   display: block;
   background-image: url("../img/mouse-icon.svg");
   background-repeat: no-repeat;
-  background-position: left center;
-  padding-left: 25px;
+  background-position: left top;
+  padding-left: 30px;
   line-height: 30px;
 }
 
@@ -11018,8 +11024,8 @@ section.section-intro .max-container {
 .opening-end {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 15px;
+  right: 15px;
 }
 .opening-end.static-end {
   position: static;

@@ -114,6 +114,9 @@ section.section-content{
 section.section-footer{
     background-color: #fff;
     padding: 80px 0 30px;
+    .content{
+        margin-bottom: 50px;
+    }
 }
 section.section-intro{
     height: calc(100vh - 128px);
@@ -258,8 +261,13 @@ section.section-intro{
 .row{
     overflow: hidden;
 }
+.first-container{
+    display: table-cell;
+    vertical-align: middle;
+    height: calc(100vh - 205px);
+}
 .opening{
-    padding-top: 10%;
+
     @include xs{
         margin-top: 2px;
     }
@@ -312,8 +320,8 @@ section.section-intro{
     display: block;
     background-image: url('../img/mouse-icon.svg');
     background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 25px;
+    background-position: left top;
+    padding-left: 30px;
     line-height: 30px;
 }
 
@@ -332,8 +340,8 @@ section.section-intro{
 .opening-end{
     position: absolute;
     bottom: 0;
-    left: 0 ;
-    right: 0;
+    left: 15px;
+    right: 15px;
     &.static-end{
         position: static;
         margin-top: 80px;
