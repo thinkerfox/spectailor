@@ -16,7 +16,7 @@ class EmailController extends Controller
      */
     public function contact(Request $request)
     {
-        Mail::to('firat@spectailor.co')->send(new ContactMail($request->name, $request->email, $request->body));
+        Mail::to('info@spectailor.co')->send(new ContactMail($request->name, $request->email, $request->body));
         return 'Hello World';
     }
 }
