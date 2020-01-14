@@ -294,7 +294,7 @@
                                 <h2 class="wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.3s">
                                     Tailor with us!
                                 </h2>
-                                <p class="contact-sub wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.6s">Our form is not cool enough? <br class="hidden-lg hidden-sm hidden-md"> <a class="spectailor-link" href="mailto:hello@spectailor.co">Send us an e-mail</a></p>
+                                <p class="contact-sub wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.6s">Our form is not cool enough? <br class="hidden-lg hidden-sm hidden-md"> <a class="spectailor-link" href="mailto:info@spectailor.co">Send us an e-mail</a></p>
                                 <div class="row">
                                     <div class="col-12">
                                         <form action="{{ route('mail.contact') }}" method="POST" id="spectailor-form">
