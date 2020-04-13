@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57.25" height="73.584" viewBox="0 0 57.25 73.584">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="prefix__Group_1819" data-name="Group 1819" transform="translate(-135.003 -309)">
+        <path id="prefix__Path_547" d="M164.945 366.231v-48.353a7.376 7.376 0 0 0-7.378-7.378h-3.689a7.376 7.376 0 0 0-7.378 7.378v48.352" class="prefix__cls-1" data-name="Path 547" transform="translate(25.24)"/>
+        <path id="prefix__Path_548" d="M164.945 325.633l-9.223 14.756-9.222-14.756" class="prefix__cls-1" data-name="Path 548" transform="translate(25.24 40.695)"/>
+        <path id="prefix__Line_116" d="M11.067 0L0 0" class="prefix__cls-1" data-name="Line 116" transform="translate(171.74 321.567)"/>
+        <path id="prefix__Line_117" d="M11.067 0L0 0" class="prefix__cls-1" data-name="Line 117" transform="translate(171.74 328.945)"/>
+        <path id="prefix__Path_549" d="M148 325.25l3.689 1.845 3.689-1.845" class="prefix__cls-1" data-name="Path 549" transform="translate(29.274 39.664)"/>
+        <g id="prefix__Group_1816" data-name="Group 1816" transform="translate(138.958 338.744)">
+            <path id="prefix__Line_118" d="M0 0L14.756 14.756" class="prefix__cls-1" data-name="Line 118"/>
+            <path id="prefix__Line_119" d="M0 14.756L14.756 0" class="prefix__cls-1" data-name="Line 119"/>
+        </g>
+        <g id="prefix__Group_1817" data-name="Group 1817" transform="translate(137.114 312.549)">
+            <path id="prefix__Path_550" d="M137.114 317.2l6.707 8.2 11.738-14.346" class="prefix__cls-1" data-name="Path 550" transform="translate(-137.114 -311.055)"/>
+        </g>
+        <g id="prefix__Group_1818" data-name="Group 1818" transform="translate(137.114 365.349)">
+            <path id="prefix__Path_551" d="M137.114 331.516l6.707 8.2 11.738-14.346" class="prefix__cls-1" data-name="Path 551" transform="translate(-137.114 -325.368)"/>
+        </g>
+    </g>
+</svg>

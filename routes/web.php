@@ -17,4 +17,8 @@ Route::get('/', function () {
     return view('welcome', compact('agentIsMobile'));
 });
 
+Route::get('/tasarim-denetimi', function () {
+    return view('landing');
+});
+
 Route::name('mail.contact')->post('/contact', 'EmailController@contact');

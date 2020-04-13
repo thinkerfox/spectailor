@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79.636" height="73.25" viewBox="0 0 79.636 73.25">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="prefix__Group_1822" data-name="Group 1822" transform="translate(-308 -176.75)">
+        <path id="prefix__Path_556" d="M330.456 178.71l3.5 7.091a.834.834 0 0 0 .62.449l7.824 1.139a.821.821 0 0 1 .456 1.4l-5.66 5.521a.818.818 0 0 0-.237.726l1.336 7.795a.823.823 0 0 1-1.193.869l-7-3.682a.836.836 0 0 0-.767 0l-7 3.682a.823.823 0 0 1-1.193-.869l1.336-7.795a.817.817 0 0 0-.237-.726l-5.66-5.521a.821.821 0 0 1 .456-1.4l7.824-1.139a.834.834 0 0 0 .62-.449l3.5-7.091a.821.821 0 0 1 1.475 0z" class="prefix__cls-1" data-name="Path 556" transform="translate(18.099)"/>
+        <path id="prefix__Path_557" d="M309.5 216.045V190.5h25.545v25.545" class="prefix__cls-1" data-name="Path 557" transform="translate(0 32.455)"/>
+        <path id="prefix__Path_558" d="M316.5 221.344V188.5h25.545v32.844" class="prefix__cls-1" data-name="Path 558" transform="translate(18.545 27.156)"/>
+        <path id="prefix__Path_559" d="M323.5 210.747V192.5h25.545v18.247" class="prefix__cls-1" data-name="Path 559" transform="translate(37.091 37.753)"/>
+    </g>
+</svg>
