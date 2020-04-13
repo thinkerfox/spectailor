@@ -37,8 +37,8 @@
       <file leaf-file-name="landing.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+            <state relative-caret-position="286">
+              <caret line="1" column="394" selection-start-line="1" selection-start-column="394" selection-end-line="1" selection-end-column="394" />
               <folding>
                 <element signature="n#style#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -50,7 +50,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>section-in</find>
       <find>section-int</find>
       <find>section-cont</find>
       <find>section-intro</find>
@@ -80,6 +79,7 @@
       <find>Get Direc</find>
       <find>scroll-down</find>
       <find>app.js</find>
+      <find>index.html</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -312,12 +312,12 @@
       <workItem from="1578037912116" duration="6213000" />
       <workItem from="1578392240324" duration="7628000" />
       <workItem from="1578418784537" duration="15000" />
-      <workItem from="1586759006848" duration="474000" />
+      <workItem from="1586759006848" duration="712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47921000" />
+    <option name="totallyTimeSpent" value="48159000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -696,8 +696,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/landing.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        <state relative-caret-position="286">
+          <caret line="1" column="394" selection-start-line="1" selection-start-column="394" selection-end-line="1" selection-end-column="394" />
           <folding>
             <element signature="n#style#0;n#section#4;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
