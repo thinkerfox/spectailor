@@ -10787,11 +10787,6 @@ section.section-footer .content {
 section.section-intro {
   height: calc(100vh - 128px);
 }
-@media only screen and (max-width: 767px) {
-  section.section-intro {
-    margin-top: 70px;
-  }
-}
 section.section-intro .max-container {
   height: calc(100vh - 128px);
 }

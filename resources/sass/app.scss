@@ -123,9 +123,6 @@ section.section-footer{
 }
 section.section-intro{
     height: calc(100vh - 128px);
-    @include xs{
-        margin-top: 70px;
-    }
     .max-container{
         height: calc(100vh - 128px);
     }
