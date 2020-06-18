@@ -10838,6 +10838,9 @@ section.section-intro .max-container {
     transition: none;
   }
 }
+.spectailor-btn.navigation {
+  width: 176px;
+}
 .spectailor-btn:hover {
   color: white !important;
   background-color: black;
@@ -11065,6 +11068,10 @@ section.section-intro .max-container {
   .content p {
     margin-bottom: 0;
   }
+}
+.content .font-24 {
+  font-size: 24px !important;
+  line-height: 34px;
 }
 
 .contact-sub {

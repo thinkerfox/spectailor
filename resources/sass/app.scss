@@ -160,6 +160,10 @@ section.section-intro{
     text-align: center;
     letter-spacing: 3px;
     cursor: pointer;
+    &.navigation{
+        width: 176px;
+    }
+
     &:hover{
         color: white !important;
         background-color: black;
@@ -379,6 +383,10 @@ section.section-intro{
             margin-bottom: 0;
         }
     }
+    .font-24{
+        font-size: 24px !important;
+        line-height: 34px;
+    }
 }
 
 .contact-sub{
@@ -516,3 +524,5 @@ footer{
         }
     }
 }
+
+
