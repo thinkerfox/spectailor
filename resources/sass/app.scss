@@ -110,6 +110,9 @@ section.spec-section.section-intro{
 }
 section.section-content{
     padding: 120px 0;
+    @include xs{
+        padding: 80px 0;
+    }
 }
 section.section-footer{
     background-color: #fff;
@@ -120,6 +123,9 @@ section.section-footer{
 }
 section.section-intro{
     height: calc(100vh - 128px);
+    @include xs{
+        margin-top: 70px;
+    }
     .max-container{
         height: calc(100vh - 128px);
     }
@@ -143,7 +149,11 @@ section.section-intro{
         width: 100%;
     }
 }
-
+.mb-phone-5{
+    @include xs{
+        margin-bottom: 30px;
+    }
+}
 .spectailor-btn{
     @include transition(all, 0.3s);
     color: black;
@@ -281,7 +291,10 @@ section.section-intro{
         font-family: arboriaLight;
         display: block;
         @include xs{
-            margin-top: 32px;
+            margin-top: 62px;
+            &.no-margin-top{
+                margin-top: 0 !important;
+            }
         }
     }
     h1{
@@ -290,6 +303,9 @@ section.section-intro{
         font-family: arboriaBold;
         display: inline-block;
         background: linear-gradient(to bottom, white 50%, rgba(#FFFABC, 1) 50%);
+        @include xs{
+            margin-bottom: 0;
+        }
 
     }
     p{

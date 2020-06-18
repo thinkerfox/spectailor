@@ -10770,6 +10770,11 @@ section.spec-section.section-intro .main-container {
 section.section-content {
   padding: 120px 0;
 }
+@media only screen and (max-width: 767px) {
+  section.section-content {
+    padding: 80px 0;
+  }
+}
 
 section.section-footer {
   background-color: #fff;
@@ -10781,6 +10786,11 @@ section.section-footer .content {
 
 section.section-intro {
   height: calc(100vh - 128px);
+}
+@media only screen and (max-width: 767px) {
+  section.section-intro {
+    margin-top: 70px;
+  }
 }
 section.section-intro .max-container {
   height: calc(100vh - 128px);
@@ -10804,6 +10814,12 @@ section.section-intro .max-container {
     width: 100%;
   }
 }
+@media only screen and (max-width: 767px) {
+  .mb-phone-5 {
+    margin-bottom: 30px;
+  }
+}
+
 .spectailor-btn {
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
@@ -10954,7 +10970,10 @@ section.section-intro .max-container {
 }
 @media only screen and (max-width: 767px) {
   .opening span.hero-light {
-    margin-top: 32px;
+    margin-top: 62px;
+  }
+  .opening span.hero-light.no-margin-top {
+    margin-top: 0 !important;
   }
 }
 .opening h1 {
@@ -10964,6 +10983,11 @@ section.section-intro .max-container {
   display: inline-block;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), color-stop(50%, #fffabc));
   background: linear-gradient(to bottom, white 50%, #fffabc 50%);
+}
+@media only screen and (max-width: 767px) {
+  .opening h1 {
+    margin-bottom: 0;
+  }
 }
 .opening p {
   font-size: 18px;

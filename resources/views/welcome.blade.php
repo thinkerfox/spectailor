@@ -45,19 +45,19 @@
     </main>
 </header>
 
-<main>
+<main class="col-12">
     <section class="section spec-section section-intro" data-anchor="home">
         <div class="main-container ">
             <div class="first-container main-container fullHeight">
             <div class="opening">
                 <div class="row align-items-center">
                     <div class="col-12 col-md-6 hidden-lg hidden-md hidden-sm">
-                        <img src="{{ asset('img/intro.svg') }}" alt="Welcome to Spectailor" class="img-fluid">
+                        <img src="{{ asset('img/sections/section-1.svg') }}" alt="Welcome to Spectailor" class="img-fluid">
                     </div>
                     <div class="col-md-5 col-12">
                         <span class="hero-light wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">Ürününüzün  </span>
                         <h1 class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">kullanılabilirliğini </h1>
-                        <span class="hero-light wow fadeIn" data-wow-duration="1s" data-wow-delay="0s">artırın ve rekabet avantajı elde edin.  </span>
+                        <span class="hero-light wow fadeIn no-margin-top" data-wow-duration="1s" data-wow-delay="0s">artırın ve rekabet avantajı elde edin.  </span>
                         <p class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.3s">Karmaşık süreçleri kolaylaştırarak, kullanıcı deneyimini faydalı ve kullanışlı hale getirin.</p>
                         <button class="spectailor-btn dark-btn hidden-xs wow fadeIn navigation" data-href="#section-audit" data-wow-duration="1s" data-wow-delay="0.5s" id="explore-btn">HEMEN KEŞFET</button>
                     </div>
@@ -100,7 +100,7 @@
                                     kararlar için güvenilir bir temel hazırlıyoruz. Kullanıcı sadakatini ve büyüme/dönüşüm oranınızı iyileştiriyoruz.
                                 </h3>
                                 <div class="row">
-                                    <div class="col-md-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
+                                    <div class="col-md-6 col-12 mb-phone-5 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.6s">
                                         <p>
                                             <span>Kullanıcı araştırması</span>
                                             <span>Persona belirleme</span>
@@ -143,7 +143,7 @@
                                     Projenizi doğru anlayarak, en uygun araçları kullanıyor ve analizlerimizi tamamlıyoruz. Vizyonunuzu, fikirlerinizi ve hedeflerinizi karşılayan insan merkezli somut bir projeye dönüştürmenize destek oluyoruz.
                                 </h3>
                                 <div class="row">
-                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                    <div class="col-lg-6 col-12 mb-phone-5 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
                                         <p>
                                             <span>Wireframe oluşturma</span>
                                             <span>Prototipleme ile fikirleri doğrulama</span>
@@ -187,7 +187,7 @@
                                     İyi bir MVP tanımlamanın; uzun ömürlü ve sürdürülebilir ürünler için ne kadar önemli olduğunun farkındayız. Kısa zamanlı projelerden, daha uzun soluklu ve sürekli gelişen ürünlere kadar, her türlü projenizi hayata geçirmenize eşlik ediyoruz.
                                 </h3>
                                 <div class="row">
-                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                    <div class="col-lg-6 col-12 mb-phone-5 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
                                         <p>
                                             <span>Pazar araştırması</span>
                                             <span>Kullanıcı araştırması</span>
@@ -234,7 +234,7 @@
                                     anlıyor ve kullanımı kolaylaştırma odaklı uygun çözümler tasarlıyoruz.
                                 </h3>
                                 <div class="row">
-                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                    <div class="col-lg-6 col-12 mb-phone-5 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
                                         <p>
                                             <span>Performans testleri</span>
                                             <span>Kullanılabilirlik denetimi</span>
@@ -276,7 +276,7 @@
                                     Web sitelerinden, mobil uygulamalara; e-ticaret sistemlerinden, ERP yazılım arayüzlerine kadar birçok projede deneyim tasarlayan ödüllü Spectailor ekibimizle, projenizin UX Takımı olarak çalışıyoruz.
                                 </h3>
                                 <div class="row">
-                                    <div class="col-lg-6 col-12 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
+                                    <div class="col-lg-6 col-12 mb-phone-5 wow fadeIn" data-wow-duration="2.5s" data-wow-delay="0.3s">
                                         <p>
                                             <span>Atölyeler</span>
                                             <span>Tasarım sprintleri</span>
@@ -345,7 +345,7 @@
                                                 <input type="text" name="email" id="email_field" required placeholder="@">
                                             </div>
                                             <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                                                <label for="body">Size nasıl faydalı olabiliriz</label>
+                                                <label for="body">Size nasıl faydalı olabiliriz?</label>
                                                 <textarea name="body" id="myTextArea" required rows="1" placeholder="Bir kaç cümle ile projenizden bahsedin"></textarea>
                                             </div>
                                             <div class="form-set wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
