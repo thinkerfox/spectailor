@@ -10789,7 +10789,7 @@ section.section-intro {
 }
 @media only screen and (max-width: 767px) {
   section.section-intro {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 section.section-intro .max-container {
