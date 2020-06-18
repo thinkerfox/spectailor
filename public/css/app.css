@@ -10772,7 +10772,7 @@ section.section-content {
 }
 @media only screen and (max-width: 767px) {
   section.section-content {
-    padding: 80px 0;
+    padding: 45px 0;
   }
 }
 
@@ -10786,6 +10786,11 @@ section.section-footer .content {
 
 section.section-intro {
   height: calc(100vh - 128px);
+}
+@media only screen and (max-width: 767px) {
+  section.section-intro {
+    margin-bottom: 50px;
+  }
 }
 section.section-intro .max-container {
   height: calc(100vh - 128px);
